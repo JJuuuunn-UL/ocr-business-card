@@ -1,0 +1,38 @@
+/* 📌 고정된 위치 설정 */
+.history-list {
+  position: fixed;
+  margin: auto 10px;
+  top: 50%;
+  transform: translateY(-50%); /* 화면 중앙 정렬 */
+  width: 300px;
+  height: 70%;
+  padding: 20px;
+  border: 1px solid #cecece;
+  overflow-y: auto; /* 내부 내용이 길 경우 스크롤 */
+}
+
+.fileName {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* OCR 결과 스타일 */
+.result {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+/* 화면 width가 1100px 이하일 때 */
+@media (max-width: 1100px) {
+  .history-list {
+    position: static; /* 고정 위치 해제 */
+    width: 100%; /* 너비를 100%로 설정 */
+    max-width: 300px;
+    height: auto; /* 높이를 자동으로 설정 */
+    margin: 20px auto; /* 가운데 정렬 */
+    transform: none; /* 변형 해제(aside) */
+  }
+}
