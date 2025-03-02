@@ -85,8 +85,8 @@ const requestOCRBusinessCard = async () => {
   loading.value = true; // 로딩 바 활성화
 
   // localStorage에 저장할 데이터의 만료 시간 (일 시 분 초 밀리초)
-  // const expirationDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
-  const expirationDate = new Date().getTime() + (1 * 1 * 1 * 60 * 1000);
+  const expirationDate = new Date().getTime() + (7 * 24 * 60 * 60 * 1000);
+  // const expirationDate = new Date().getTime() + (1 * 1 * 1 * 60 * 1000);
 
   try {
     const response = await axios.post(url, formData, {

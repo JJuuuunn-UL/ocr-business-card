@@ -11,15 +11,15 @@
                 <div v-if="viewItems[index]" class="result">
                     <h3>📌 추출된 정보</h3>
                     <p><strong>파일 이름:</strong> {{ item.fileName }}</p>
-                    <p><strong>이름:</strong> {{ result.name || "" }}</p>
-                    <p><strong>회사명:</strong> {{ result.company  || ""}}</p>
-                    <p><strong>부서:</strong> {{ result.department  || ""}}</p>
-                    <p><strong>직위:</strong> {{ result.position  || ""}}</p>
-                    <p><strong>주소:</strong> {{ result.address  || ""}}</p>
-                    <p><strong>모바일:</strong> {{ result.mobile  || ""}}</p>
-                    <p><strong>전화번호:</strong> {{ result.tel  || ""}}</p>
-                    <p><strong>이메일:</strong> {{ result.email  || ""}}</p>
-                    <p><strong>홈페이지:</strong> {{ result.homepage  || ""}}</p>
+                    <p><strong>이름:</strong> {{ item.result.name  || ""}}</p>
+                    <p><strong>회사명:</strong> {{ item.result.company  || ""}}</p>
+                    <p><strong>부서:</strong> {{ item.result.department  || ""}}</p>
+                    <p><strong>직위:</strong> {{ item.result.position  || ""}}</p>
+                    <p><strong>주소:</strong> {{ item.result.address  || ""}}</p>
+                    <p><strong>모바일:</strong> {{ item.result.mobile  || ""}}</p>
+                    <p><strong>전화번호:</strong> {{ item.result.tel  || ""}}</p>
+                    <p><strong>이메일:</strong> {{ item.result.email  || ""}}</p>
+                    <p><strong>홈페이지:</strong> {{ item.result.homepage  || ""}}</p>
                     <!-- <p><strong>이름:</strong> {{ "" }}</p>
                     <p><strong>회사명:</strong> {{ "" }}</p>
                     <p><strong>부서:</strong> {{ "" }}</p>
