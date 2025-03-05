@@ -35,7 +35,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted as onBeforeUpdate } from "vue";
+import { ref, onMounted } from "vue";
 import axios from "axios";
 import HistoryList from './HistoryList.vue'
 import '../assets/styles/OcrBusinessCard.css';
@@ -176,7 +176,7 @@ const removeExpiredData = () => {
 };
 
 // 페이지 로드 시 만료된 데이터 제거
-onBeforeUpdate(() => {
+onMounted(() => {
   loadHistoryFromLocalStorage();
   removeExpiredData(); // 만료된 데이터 삭제
 });
